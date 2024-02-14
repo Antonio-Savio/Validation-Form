@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação</title>
+
+    <link rel="stylesheet" href="src/CSS/reset.css">
+    <link rel="stylesheet" href="src/CSS/style.css">
+</head>
+<body>
+    <main>
+        <div class="left-text">
+            <h1 class="title">ANY DOUBT? <br> LEAVE US A MESSAGE!</h1>
+            <p class="subtitle">If you have any question, send us a message and we'll get in touch in less than 24 hours.</p>
+        </div>
+
+        <form novalidate method="get" action="index.html">
+            <div class="campos">
+                <input type="text" name="name" class="inputs" placeholder="Full Name *">
+                <p class="required">Required field</p>
+            </div>
+            <div class="campos">
+                <input type="email" name="email" class="inputs" placeholder="Email *">
+                <p class="required">Enter a valid email address</p>
+            </div>
+            <div class="campos">
+                <input type="number" name="phone" class="inputs" placeholder="Phone *">
+                <p class="required">Phone must have 8 numbers</p>
+            </div>
+            <div class="campos">
+                <textarea class="inputs" name="message" placeholder="Message *"></textarea>
+                <p class="required">Required field</p>
+            </div>
+
+            <p class="indication">*Required fields</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="src/JS/index.js"></script>
+</body>
+</html>
